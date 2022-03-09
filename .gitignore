@@ -1,0 +1,9 @@
+# Python Files
+venv
+__pycache__
+
+# Logs
+*.log
+
+# PyCharm
+.idea
