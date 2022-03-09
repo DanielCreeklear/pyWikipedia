@@ -1,0 +1,1 @@
+# pyWikipedia - A scraper for wikipedia
