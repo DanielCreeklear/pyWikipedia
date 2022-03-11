@@ -59,3 +59,6 @@ class WikipediaPage(Html):
                         break
                     j += 1
             i += 1
+
+    def get_text_tree(self):
+        return [tree.get_tree() for tree in self.texts]
