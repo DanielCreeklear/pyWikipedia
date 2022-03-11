@@ -45,21 +45,17 @@ class WikipediaPage(Html):
                             sub_sub_tag = self.get_element_tag(sub_sub_element)
 
                             if sub_sub_tag == 'p':
-                                sub_text.insert_paragraph(sub_sub_element.get_text())
+                                sub_text.insert(sub_sub_element.get_text())
                             elif sub_sub_tag == 'h3' or sub_sub_tag == 'h2':
-                                text.insert_paragraph(sub_text)
+                                text.insert(sub_text)
                                 j = k - 1
                                 break
                             k += 1
                     elif sub_tag == 'p':
-                        text.insert_paragraph(sub_element.get_text())
+                        text.insert(sub_element.get_text())
                     elif sub_tag == 'h2':
                         self.texts.append(text)
                         i = j - 1
                         break
                     j += 1
             i += 1
-
-
-
-
