@@ -9,6 +9,7 @@ def main():
     logging.basicConfig(filename='test.log', level=logging.DEBUG)
     wikipedia_page = WikipediaPage(URL)
     wikipedia_page.get_texts()
+    print(wikipedia_page.texts[0].get_tree())
 
 
 if __name__ == '__main__':

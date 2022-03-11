@@ -9,7 +9,7 @@ class Text:
         self.paragraphs = []
 
     def insert(self, paragraph) -> None:
-        self.paragraphs.append(paragraph)
+        self.paragraphs.append(paragraph.replace('\n', ''))
 
     def get_tree(self):
         try:
@@ -19,6 +19,11 @@ class Text:
         except TypeError:
             return {self.title: [item.get_tree() for item in self.paragraphs if type(item) is Text] +
                                 [item for item in self.paragraphs if type(item) is dict or type(item) is str]}
+
+    def replace(self, __old, __new):
+        for i in range(len(self.paragraphs)):
+            self.paragraphs[i].replace(__old, __new)
+        return self
 
     def __len__(self):
         return len(self.paragraphs)
