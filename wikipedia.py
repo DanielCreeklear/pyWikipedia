@@ -10,9 +10,9 @@ class WikipediaPage(Html):
     def __init__(self, html: str):
         super().__init__(html)
         self.html = html
-        self.main_title = self.get_main_title()
         self.content_elements = self.__get_content_elements()
         self.texts = []
+        self.__get_texts()
 
     def get_main_title(self) -> PageElement:
         try:
@@ -24,7 +24,7 @@ class WikipediaPage(Html):
         main_title = self.get_main_title()
         return self.get_elements_from_this_element_to(main_title, 'div', id='mw-data-after-content')
 
-    def get_texts(self) -> None:
+    def __get_texts(self) -> None:
         i = 0
         while i < len(self.content_elements):
             element = self.content_elements[i]
