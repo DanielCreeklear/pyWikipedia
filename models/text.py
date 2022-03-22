@@ -28,5 +28,5 @@ class Text:
     def __len__(self):
         return len(self.paragraphs)
 
-    def __add__(self, otherText):
-        return {self.title: self.paragraphs, otherText.title: otherText.paragraphs}
+    def __add__(self, other_text):
+        return {self.title: self.paragraphs, other_text.title: other_text.paragraphs}
