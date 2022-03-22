@@ -1,8 +1,7 @@
-from functools import reduce
 from time import strftime
 from bs4 import PageElement
 from logging import error
-from page_html import Html
+from src.page_html import Html
 from models.text import Text
 
 
@@ -60,5 +59,5 @@ class WikipediaPage(Html):
                     j += 1
             i += 1
 
-    def get_text_tree(self):
-        return [tree.get_tree() for tree in self.texts]
+    def get_text_tree(self) -> dict:
+        return {self.get_main_title().get_text(): [tree.get_tree() for tree in self.texts]}
