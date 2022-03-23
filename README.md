@@ -1,9 +1,9 @@
 # pyWikipedia
 ![GitHub repo size](https://img.shields.io/github/repo-size/danielcreeklear/pyWikipedia?style=for-the-badge)
 ![GitHub language count](https://img.shields.io/github/languages/count/danielcreeklear/pyWikipedia?style=for-the-badge)
-![GitHub forks](https://img.shields.io/github/forks/danielcreeklear/pyWikipedia?style=for-the-badge)
-![Bitbucket open issues](https://img.shields.io/bitbucket/issues/danielcreeklear/pyWikipedia?style=for-the-badge)
-![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/danielcreeklear/pyWikipedia?style=for-the-badge)
+![GitHub last commit](https://img.shields.io/github/last-commit/danielcreeklear/pyWikipedia?style=for-the-badge)
+![GitHub Release Date](https://img.shields.io/github/release-date/danielcreeklear/pyWikipedia?style=for-the-badge)
+![GitHub license](https://img.shields.io/github/license/danielcreeklear/pyWikipedia?style=for-the-badge)
 
 # Collaborators
 <table>
