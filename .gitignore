@@ -2,8 +2,9 @@
 venv
 __pycache__
 
-# Logs
+# Local files
 *.log
+*.json
 
 # PyCharm
 .idea
