@@ -5,6 +5,8 @@
 ![GitHub Release Date](https://img.shields.io/github/release-date/danielcreeklear/pyWikipedia?style=for-the-badge)
 ![GitHub license](https://img.shields.io/github/license/danielcreeklear/pyWikipedia?style=for-the-badge)
 
+![pyW](pyW.png)
+
 # Collaborators
 <table>
 <tr>
